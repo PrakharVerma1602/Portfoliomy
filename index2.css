@@ -1,0 +1,246 @@
+/* Reset some default styles */
+html, body, ul, li, h1, h2, h3, p, figure, form, fieldset, legend, button, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Set a default background color and text color */
+  body {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  #header {
+    background-color: #007bff;
+    padding: 15px 0;
+  }
+  
+  #header nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  #header .logo {
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  #sidemenu {
+    list-style: none;
+    display: flex;
+  }
+  
+  #sidemenu li {
+    margin-right: 20px;
+  }
+  
+  #sidemenu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+  }
+  
+  #sidemenu li a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* About section styling */
+  #about {
+    padding: 40px 0;
+  }
+  
+  .about-col-1 img {
+    max-width: 100%;
+  }
+  
+  .glassmorphoism-effect {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .sub-title {
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .tab-titles {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .tab-links {
+    cursor: pointer;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .tab-links.active-link {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .tab-contents {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  .tab-contents.active-tab {
+    display: block;
+  }
+  
+  .tab-contents ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  /* Services section styling */
+  #services {
+    background-color: #fff;
+    padding: 40px 0;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .services-list div {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .services-list div i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  /* Portfolio section styling */
+  #portfolio {
+    padding: 40px 0;
+  }
+  
+  .work-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .work img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .work img:hover {
+    transform: scale(1.1);
+  }
+  
+  .work .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .work:hover .layer {
+    opacity: 1;
+  }
+  
+  /* Contact section styling */
+  .contact {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+  }
+  
+  .contact-left {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .contact-left .sub-title {
+    color: #007bff;
+  }
+  
+  .contact-left p {
+    margin-bottom: 10px;
+  }
+  
+  .social_icons {
+    margin-top: 20px;
+  }
+  
+  .social_icons a {
+    color: #007bff;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Contact form */
+  .contact-right form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact-right input,
+  .contact-right textarea,
+  .contact-right button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .contact-right button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .contact-right button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer p {
+    color: #999;
+  }
+  
